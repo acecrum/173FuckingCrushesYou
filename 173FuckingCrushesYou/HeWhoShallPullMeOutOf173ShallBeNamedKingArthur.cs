@@ -1,11 +1,8 @@
-using CustomPlayerEffects;
 using LabApi.Events.Arguments.PlayerEvents;
 using LabApi.Events.Handlers;
-using LabApi.Features.Console;
 using PlayerRoles;
 using PlayerStatsSystem;
 using UnityEngine;
-using Logger = LabApi.Features.Console.Logger;
 
 namespace _173FuckingCrushesYou;
 
