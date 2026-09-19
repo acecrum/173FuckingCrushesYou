@@ -26,7 +26,7 @@ public class HeWhoShallPullMeOutOf173ShallBeNamedKingArthur
         
         foreach (var hub in from hub in ReferenceHub.AllHubs where hub != ev.Player.ReferenceHub where hub.GetTeam() != ev.Player.Team where Vector3.Distance(hub.transform.position, ev.Player.ReferenceHub.transform.position) <= 2f select hub)
         {
-            hub.playerStats.DealDamage(new UniversalDamageHandler(150f, DeathTranslations.Crushed, DamageHandlerBase.CassieAnnouncement.Default));
+            hub.playerStats.DealDamage(new GrayCandyDamageHandler(ev.Player.ReferenceHub, 150f));
             Hitmarker.SendHitmarkerDirectly(ev.Player.Connection, 1f);
         }
     }
